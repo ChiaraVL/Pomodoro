@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./images/back.gif');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 100vh; 
+    overflow: hidden; 
+    font-family: sans-serif;
+    align-content: center;
+    justify-content: center;
+}
+
+
