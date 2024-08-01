@@ -11,18 +11,20 @@ body {
     background-image: url('../images/back.gif');
     background-size: cover; 
     background-repeat: no-repeat;
-    background-position: bottom ;
+    background-position: bottom;
     font-family: "Roboto", sans-serif;
     display: flex;
+    align-items: center; 
     justify-content: center;
-    align-items: center;
     height: 100vh;
     transition: all 0.6s ease-in-out;
 }
 
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; 
+    margin-left: 10%;
+    width: auto; 
 }
 
 .card {
@@ -105,9 +107,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(7.7px);
+    backdrop-filter: blur(7.7px);
+    background: rgba(255, 255, 255, 0.21);
     border-radius: 50%;
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
                 rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
@@ -160,3 +162,115 @@ body {
       box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
     }
   }
+
+/*TODO*/
+  
+.todo-app {
+    position: relative;
+    width: auto;
+    max-width: 540px;
+    margin-right: 10%;
+    margin-left: 10%;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(4.7px);
+    backdrop-filter: blur(4.7px);
+    background: rgba(255, 255, 255, 0.21);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+                rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.todo-app h2 {
+    color: #f1f1f1;
+    font-weight: 900;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.todo-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    justify-content: space-between;
+    border-radius: 40px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    color: #f1f1f1;
+    background: transparent;
+    padding: 10px;
+    font-weight: 200;
+}
+
+.add {
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 40px; 
+    font-size: 12px;
+    background-color: rgb(85, 4, 85);
+    color: #f1f1f1;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+ul li {
+    list-style: none;
+    color: #f1f1f1;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(./images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked {
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url(./images/checked.png); 
+}
+
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: #ccc;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+}
+
+ul li span:hover {
+    background: rgba(255, 255, 255, 0.08);
+}

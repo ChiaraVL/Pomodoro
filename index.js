@@ -3,7 +3,7 @@ const circularProgressBarNumber = document.querySelector("#circularProgressBar .
 const buttonTypePomodoro = document.getElementById('buttonTypePomodoro');
 const buttonTypeShortBreak = document.querySelector('.buttonTypeShortBreak');
 const buttonTypeLongBreak = document.querySelector('.buttonTypeLongBreak');
-const audio = new Audio('alarm.mp3');
+const audio = new Audio('./audio/alarm.mp3');
 
 const pomodoroTimerInSeconds = 1500; 
 const shortBreakTimerInSeconds = 300;
@@ -47,7 +47,7 @@ const resetTimer = () => {
     }
     multiplierFactor = 360 / timerValue;
     setInfoCircularProgressBar();
-    audio.stop();
+    audio.pause();
 };
 
 function setInfoCircularProgressBar() {
