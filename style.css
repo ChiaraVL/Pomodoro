@@ -180,7 +180,21 @@ body {
                 rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
-.todo-app h2 {
+.videos {
+    position: relative;
+    width: auto;
+    max-width: 540px;
+    margin-right: 10%;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(4.7px);
+    backdrop-filter: blur(4.7px);
+    background: rgba(255, 255, 255, 0.21);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px,
+                rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.todo-app h2, .videos h2 {
     color: #f1f1f1;
     font-weight: 900;
     font-size: 24px;
@@ -191,6 +205,11 @@ body {
 
 .todo-app h2 img {
     width: 30px;
+    margin-left: 10px;
+}
+
+.videos h2 img {
+    width: 100px;
     margin-left: 10px;
 }
 
